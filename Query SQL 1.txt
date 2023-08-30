@@ -1,0 +1,38 @@
+ESERCIZIO 1:
+select *
+from students s 
+where year(date_of_birth) = 1990;
+
+ESERCIZIO 2:
+select *
+from courses c 
+where cfu > 10;
+
+ESERCIZIO 3:
+select *
+from students s 
+where datediff(now(),date_of_birth)  > 10950;
+
+ESERCIZIO 4:
+select *
+from courses c 
+where period = 'I semestre' and `year` = 1;
+
+ESERCIZIO 5:
+select *
+from exams e 
+where `date` = '2020-06-20' and hour(`hour`) > 13;
+
+ESERCIZIO 6:
+select *
+from degrees d 
+where level = 'magistrale';
+
+ESERCIZIO 7:
+select count(id)
+from departments d ;
+
+ESERCIZIO 8:
+select *
+from teachers t 
+where  isnull(phone); 
